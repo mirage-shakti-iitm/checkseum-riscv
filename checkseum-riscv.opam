@@ -31,7 +31,7 @@ install: [
 depends: [
   "ocaml-riscv"         {>= "4.07.0"}
   "dune"          {>= "2.6.0"}
-  "conf-pkg-config" {build}
+  # "conf-pkg-config" {build}
   # "dune-configurator"
   "optint-riscv"        {>= "0.0.5"}
   "base-bytes-riscv"
