@@ -18,7 +18,7 @@ This library use the linking trick to choose between the C implementation
 top of optint to get the best representation of an int32. """
 
 build: [
-  [ "dune" "build" "-p" "checkseum" "-x" "riscv" "-j" jobs ]
+  [ "dune" "build" "-x" "riscv" "-p" "checkseum" "-j" jobs ]
   # [ "./install/install.ml" ]
   # [ "dune" "runtest" "-p" name "-j" jobs ] {with-test}
 ]
@@ -43,13 +43,4 @@ depends: [
   "fpath"         {with-test}
   "rresult"       {with-test}
   "ocamlfind"     {with-test}
-]
-
-depopts: [
-  "ocaml-freestanding"
-]
-
-conflicts: [
-  "mirage-xen" {< "6.0.0"}
-  "ocaml-freestanding" {< "0.4.3"}
 ]
