@@ -1,6 +1,5 @@
 version: "0.3.1"
 opam-version: "2.0"
-name:         "checkseum"
 maintainer:   [ "Romain Calascibetta <romain.calascibetta@gmail.com>" ]
 authors:      [ "Romain Calascibetta <romain.calascibetta@gmail.com>" ]
 homepage:     "https://github.com/mirage/checkseum"
@@ -23,10 +22,10 @@ build: [
   # [ "dune" "runtest" "-p" name "-j" jobs ] {with-test}
 ]
 
-install: [
+# install: [
   # [ "dune" "install" "-p" name ] {with-test}
   # [ "./test/test_runes.ml" ] {with-test}
-]
+# ]
 
 depends: [
   "ocaml-riscv"         {>= "4.07.0"}
