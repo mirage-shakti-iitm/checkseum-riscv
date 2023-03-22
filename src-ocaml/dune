@@ -3,5 +3,5 @@
  (public_name checkseum.ocaml)
  (libraries bigarray-compat optint)
  (implements checkseum)
- (ocamlopt_flags (-default-compartment-id 255  -setu-cap-path "/home/sai/Shakti-TEE-Practical/mirage-shakti/setu-cap-files/microbenchmark/checkseum" -function-sections))
+ (ocamlopt_flags (-default-compartment-id 6 -function-sections))
  (private_modules gin_adler32 gin_crc32 gin_crc32c gin_crc24))
